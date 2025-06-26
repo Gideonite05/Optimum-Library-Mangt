@@ -45,26 +45,26 @@ library-management-backend/
     │   └── database.js   # Database connection and Sequelize setup
     ├── controllers/
     │   ├── authController.js   # Handles user registration and login
-    │   ├── bookController.js   # Manages book-related business logic
-    │   └── loanController.js   # Manages book borrowing and returning logic
+    │   ├── bookiesController.js   # Manages book-related business logic
+    │   └── toReturnController.js   # Manages book borrowing and returning logic
     ├── middleware/
     │   ├── authMiddleware.js   # JWT verification and role-based access control
     │   └── errorHandler.js     # Centralized error handling
     ├── models/
-    │   ├── Book.js             # Defines the Book database schema
-    │   ├── Loan.js             # Defines the Loan database schema
+    │   ├── book.js             # Defines the Book database schema
+    │   ├── toReturn.js             # Defines the Loan database schema
     │   ├── User.js             # Defines the User database schema
-    │   └── index.js            # Defines relationships (associations) between models
+    │   └── parmRelate.js            # Defines relationships (associations) between models
     ├── routes/
     │   ├── authRoutes.js       # API routes for authentication
     │   ├── bookRoutes.js       # API routes for books
-    │   └── loanRoutes.js       # API routes for loans
+    │   └── toReturnRoutes.js   # API routes for loans
     ├── seeders/
-    │   └── seed.js             # Script to populate initial database data
+    │   └── libSeed.js             # Script to populate initial database data
     ├── utils/
     │   ├── appError.js         # Custom error class
-    │   └── emailService.js     # Email sending utility
-    └── server.js               # Main Express application entry point
+    │   └── emailServe.js     # Email sending utility
+    └── app.js               # Main Express application entry point
 ```
 
 🚀 Getting Started
@@ -107,7 +107,7 @@ EMAIL_PASSWORD=your_email_app_password # <--- IMPORTANT: Use an App Password for
 ## For offline/local SMTP testing (uncomment and configure if not using cloud email service):
 ### EMAIL_SERVICE=smtp
 ### EMAIL_HOST=your_local_smtp_host
-### EMAIL_PORT=25
+### EMAIL_PORT=32
 ### EMAIL_SECURE=false
 ### EMAIL_AUTH_USER=
 ### EMAIL_AUTH_PASS=
