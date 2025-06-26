@@ -1,7 +1,7 @@
 import promisify from 'util';
 import jwt from 'jsonwebtoken';
-import { user } from '../models/User.js';
-import { errorBridge } from '../utils/appError.js';
+import user from '../models/User.js';
+import errorBridge from '../utils/appError.js';
 
 export const protect = async (req, res, next) => {
     // 1) Get token and check if it's there

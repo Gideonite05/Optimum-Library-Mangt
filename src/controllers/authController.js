@@ -1,4 +1,4 @@
-import { user } from "../models/User.js";
+import user from "../models/User.js";
 import errorBridge from "../utils/appError.js";
 import jwt from "jsonwebtoken";
 import dotenv from 'dotenv';

@@ -86,5 +86,5 @@ class emailWorkies {
     }
 }
 
-const emailWorkies = new emailWorkies();
-export default emailWorkies;
+const EmailWorkies = new emailWorkies();
+export default EmailWorkies;

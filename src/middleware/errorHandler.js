@@ -1,4 +1,4 @@
-import errorBridge from "../utils/appError";
+import errorBridge from "../utils/appError.js";
 
 const errorHandler = (err, req, res, next) => {
     console.error('Global Error Handler:', err); // Log the full error

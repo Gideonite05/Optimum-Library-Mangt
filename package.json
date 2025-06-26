@@ -4,6 +4,9 @@
   "main": "src/app.js",
   "type": "module",
   "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "seed": "nodemon src/seeders/libSeed.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -22,5 +25,13 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gideonite05/Optimum-Library-Mangt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gideonite05/Optimum-Library-Mangt/issues"
+  },
+  "homepage": "https://github.com/Gideonite05/Optimum-Library-Mangt#readme"
 }
